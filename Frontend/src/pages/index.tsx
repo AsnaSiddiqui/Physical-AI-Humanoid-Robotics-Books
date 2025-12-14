@@ -14,9 +14,9 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Physical AI & Humanoid Robotics: A Complete AI-Native Book
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">A complete guide to intelligent machines, humanoids, and embodied AI</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
