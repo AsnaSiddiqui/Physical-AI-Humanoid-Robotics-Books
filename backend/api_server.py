@@ -12,7 +12,7 @@ load_dotenv()
 app = FastAPI(title="RAG Chatbot API", version="1.0.0")
 
 origins = [
-    "http://localhost:3000",
+    "https://physical-ai-humanoid-robotics-books-sigma.vercel.app",
 ]
 
 # Add CORS middleware
