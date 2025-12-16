@@ -6,7 +6,6 @@ from config.agent import run_config
 @function_tool
 def retrieve(query):
     embedding = get_embedding(query)
-    print("---------------------------------",embedding)
     result = qdrant.query_points(
         collection_name="physical_humanoid_ai_book",
         query=embedding,
@@ -27,7 +26,6 @@ You are a polite, intelligent, and helpful AI assistant powered by a Retrieval-A
 )
 
 def run_agent(query:str):
-    print("------------------",query)
     result = Runner.run_sync(
         starting_agent=rag_agent,
         input=query,

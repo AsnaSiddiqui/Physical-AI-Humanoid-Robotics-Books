@@ -45,7 +45,6 @@ def chat_endpoint(request: ChatRequest):
         session_id = request.sessionId or str(uuid.uuid4())
         reply = run_agent(request.message)
     
-        print(reply)
 
         # For now, we'll return an empty sources list
         # In a real implementation, we'd need to extract the sources from the agent's tool usage
