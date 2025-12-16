@@ -200,10 +200,9 @@
   .chat-container {
     width: 85vw;
     height: 40vh;
-    left: 50%;
-    transform: translateX(-50%);
-    right: auto;
-    bottom: 10px;
+    /* Remove centering that causes the off-screen issue */
+    left: auto !important;
+    transform: none !important;
   }
 
   .chatbot-icon {
