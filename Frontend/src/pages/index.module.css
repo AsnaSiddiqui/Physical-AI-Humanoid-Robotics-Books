@@ -28,6 +28,15 @@
 .aboutSection {
   background-color: #242424;
   text-align: center;
+  color: white;
+}
+
+.aboutSection h2 {
+  color: white;
+}
+
+.aboutSection p {
+  color: #e0e0e0;
 }
 
 .whyProjectSection {
